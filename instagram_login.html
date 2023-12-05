@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <script type="text/javascript">
+        var imgArray = new Array();
+        imgArray[0] = "images/insta_3.png";
+        imgArray[1] = "images/insta_4.png";
+ 
+        function showImage() {
+            var imgNum = Math.round(Math.random() * 1);
+            var objImg = document.getElementById("img_front");
+            objImg.src = imgArray[imgNum];
+            setTimeout("showImage()", 1000);
+        }        
+    </script>
+    <style>
+        body{
+            position: relative;
+        }
+
+        .display{
+            display: flex;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+
+        }
+
+        .sideImage{
+            width: 240px;
+            height: 400px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .img{
+            position: absolute;
+        }
+        #img{
+            width: 240px;
+            position: relative;
+        }
+        #img_back{
+            width: 180px;
+            height: 385px;
+            z-index: 1;
+            margin-top: 0px;
+            top: 0px;
+            left: 20px;
+        }
+        #img_front{
+            width: 180px;
+            height: 390px;
+            z-index: 2;
+            margin-top: 2px;
+            top: 8px;
+            left: 65px;
+        }
+
+
+        a{
+            text-decoration: none;
+        }
+
+        .full{
+            float: right;
+            width: 300px;
+        }
+
+        .main{
+            border: solid 1px lightgray;
+            border-radius: 1px;
+            text-align: center;
+            width: 240px;
+        }
+        img{
+            width: 140px;
+            height: 60px;
+            margin-top: 18px;
+            margin-bottom: 15px;
+        }
+        #email, #password{
+            width: 180px;
+            height: 22px;
+            background-color: #FAFAFA;
+            border: solid 1px lightgray;
+            border-radius: 2px;
+            color:#737373;
+            font-size: 8px;
+        }
+        #button{
+            width: 185px;
+            height: 22px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #4CB4F8;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 9px;
+        }
+
+        .mid{
+            display: flex;
+            align-items: center;
+        }
+        #hr1, #hr2{
+            flex: auto;
+            border: none;
+            height: 0.2px;
+            background-color: lightgray;
+        }
+        #hr1{
+            margin-left: 33px;
+        }
+        #hr2{
+            margin-right: 33px;
+        }
+        span{
+            padding: 0 10px;
+            color: #737373;
+            font-size: 9px;
+            font-weight: bold;
+        }
+
+        .helptable{
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        #facebookLogo{
+            width: 10px;
+            height: 10px;
+            margin: 0;
+            padding-left: 10px;
+            padding-right: 0;
+            align-items: right;
+        }
+        #facebook{
+            font-size: 9px;
+            font-weight: bold;
+            border: none;
+            background-color: white;
+            align: left;
+            padding-left: 0.7px;
+            padding-right: 10px;
+            padding-bottom: 3px;
+        }
+        #facebookButton{
+            color: #1C5CAD;
+        }
+        #pass{
+            font-size: 8px;
+            align: center;
+            padding-top: 10px;
+        }
+        #aPass{
+            color:#737373;
+        }
+
+        .join_main{
+            text-align: center;
+            margin-top: 8px;
+            width: 240px;
+            height: 40px;
+            border: solid 1px lightgray;
+            border-radius: 1px;
+        }
+        #join1{
+            margin: 0 auto;
+        }
+        #question{
+            font-size: 10.5px;
+            padding-top: 10px;
+        }
+        #newjoin{
+            font-size: 10.5px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        #aNewjoin{
+            color: #4CB4F8;
+        }
+        #join2{
+            margin: 0 auto;
+            margin-top: 8px;
+        }
+        #apptext{
+            font-size: 9.5px;
+            padding-top: 15px;
+        }
+        #google{
+            width: 90px;
+            height: 25px;
+            margin-top: 8px;
+        }
+        #micro{
+            width: 90px;
+            height: 25px;
+            margin-top: 8px;
+        }
+        #button_a{
+            color: white;
+        }
+    </style>
+</head>
+<body onload="showImage()">
+    <div class="display">
+        <div class="sideImage">
+            <div id="img">
+                    <img class="img" id="img_back" src="./images/insta_5.png">
+                    <img class="img" id="img_front">
+            </div>
+        </div>
+
+        <div class="full">
+
+            <div class="main">
+                <div class="logo">
+                    <img src="./images/1086.png">
+                </div>
+                <div class="login">
+                    <input type="text" id="email" placeholder=" 전화번호, 사용자 이름 또는 이메일" ><br>
+                    <input type="password" id="password" placeholder=" 비밀번호"><br>
+                    <button type="button" id="button">
+                        <a id="button_a" href="./imstagram_main.html">
+                        로그인
+                        </a>
+                    </button>
+                </div>
+
+                <div class="mid">
+                    <hr id="hr1"><span>또는</span><hr id="hr2">
+                </div>
+
+                <div class="help">
+                    <table class="helptable">
+                        <tr>
+                            <td><img id="facebookLogo" src="./images/facebook-icon-file.png"></td>
+                            <td>
+                                <button type="button" id="facebook">
+                                    <a id="facebookButton" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Dko_KR%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%25221fq35s8c50p20yi92us1sw68hbtbnzcelucb4r9ta51k16t8m4q%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D06512773-6786-4841-a767-66fd39d7387f%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221fq35s8c50p20yi92us1sw68hbtbnzcelucb4r9ta51k16t8m4q%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ko_KR&pl_dbl=0">
+                                        Facebook으로 로그인
+                                    </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="pass" colspan="2">
+                                <a id="aPass" href="https://www.instagram.com/accounts/password/reset/">비밀번호를 잊으셨나요?</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="join_main">
+                <table id="join1">
+                    <tr id="tr1">
+                        <td id="question">계정이 없으신가요?</td>
+                        <td id="newjoin">
+                            <a id="aNewjoin" href="https://www.instagram.com/accounts/emailsignup/">
+                                가입하기
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <table id ="join2">
+                    <tr id="tr2_1">
+                        <td id="apptext" colspan="2">앱을 다운로드하세요</td>
+                    </tr>
+                    <tr id="tr2_2">
+                        <td>
+                            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3DB4219096-3900-4A14-B79C-C8DDE5D1904F%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge%26original_referrer%3Dhttps://www.google.com/&pli=1">
+                                <img id="google" src="./images/googleapp.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.microsoft.com/store/productId/9NBLGGH5L9XT?ocid=pdpshare">
+                                <img id="micro" src="./images/microapp.png">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

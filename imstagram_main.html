@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        .full{
+            display: flex;
+        }
+        .left{
+            width: 180px;
+            float: left;
+            border-right: solid 1px lightgray;
+            margin-right: 90px;
+        }
+        .left > div{
+            margin: 15px 10px;
+            font-size: 10px; 
+            display: flex;
+            flex-direction: row;
+            align-items: center;                    
+        }
+        .left > div:hover{
+            background-color: rgba(230, 229, 229, 0.836);
+            border-radius: 3px;
+        }
+        #logo_image{
+            margin-top: 0px;
+            width: 80px;
+            height: 30px;
+        }
+        #profile{
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+        }
+
+        #thread{
+            padding-top: 80px;
+        }
+
+        #feed{
+            width: 470px;
+            height: 65px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        .middle{
+            margin: 0 auto;
+        }
+
+        .main{
+            width: 500px;
+        }
+        #img1_1{
+            width: 30px;
+            margin-left: 50px;
+            padding-left: 51px;
+        }
+        #img1{
+            width: 33px;
+            height: 33px;
+            border: solid 0.5px rgb(148, 145, 145);
+            border-radius: 100%;
+        }
+        #name{
+            font-size: 14px;
+            font-weight: bold;
+            padding-bottom: 7px;
+        }
+
+        #main_img{
+            width: 400px;
+            height: 400px;
+            margin-left: 40px;
+        }
+        #icon{
+            width: 120px;
+            padding-left: 40px;
+        }
+        #like{
+            font-weight: bold;
+            font-size: 15px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 40px;
+        }
+        #main_text{
+            padding-left: 40px;
+            font-size: 14px;
+        }
+        #main_text > span{
+            font-weight: bold;
+        }
+        #reply{
+            border: none;
+            padding-left: 40px;
+        }
+        #reply_text{
+            padding-left: 40px;
+            font-size: 14px;
+            color:#737373;
+        }
+        #more{
+            width: 25px;
+        }
+        #point{
+            border: none;
+            background-color: white;
+            font-weight: bold;
+            padding-bottom: 7px;
+        }
+        #reply{
+            width: 400px;
+            margin-left: 40px;
+            text-align: left;
+            padding-left: 2px;
+        }
+        .right{
+            width: 200px;
+            text-align: right;
+            margin-left: 50px;
+            margin-top: 38px;
+            margin-right: 30px;
+            font-size: 12px;
+        }
+        #right{
+            width: 150px;
+            text-align: left;
+        }
+        #tr_1 > td{
+            padding-bottom: 20px;
+        }
+        #tr_2 > td{
+            padding-bottom: 20px;
+        }
+        #tr_3 > td{
+            padding-bottom: 20px;
+        }
+        #tr_4 > td{
+            padding-bottom: 20px;
+        }
+        #tr_5 > td{
+            padding-bottom: 20px;
+        }
+        #a{
+            font-size: 10px;
+            font-weight: bold;
+        }
+        #small{
+            font-size: 8px;
+            font-weight: bold;
+            color: #4CB4F8;
+            text-align: right;
+        }
+        #b{
+            font-size: 10px;
+            font-weight: bold;
+            color:#737373;
+        }
+        #c{
+            font-size: 8px;
+            font-weight: bold;
+            text-align: right;
+        }
+        #rec{
+            font-size: 8px;
+            color:#737373;
+        }
+    </style>
+</head>
+<body>
+    <div class ="full">
+        <div class="left">
+            <div><img id="logo_image" src="./images/1086.png"></div>
+            <div>
+                <svg aria-label="홈" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 25 25" width="20"><title>홈</title><path d="M22 23h-6.001a1 1 0 0 1-1-1v-5.455a2.997 2.997 0 1 0-5.993 0V22a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V11.543a1.002 1.002 0 0 1 .31-.720l10-9.543a1.001 1.001 0 0 1 1.38 0l10 9.543a1.002 1.002 0 0 1 .31.720V22a1 1 0 0 1-1 1Z"></path></svg>
+                &nbsp;&nbsp;&nbsp;홈
+            </div>
+            <div >
+                <svg aria-label="검색" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 25 25" width="20"><title>검색</title><path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="16.511" x2="22" y1="16.511" y2="22"></line></svg>
+                &nbsp;&nbsp;&nbsp;검색
+            </div>
+            <div>
+                <svg aria-label="탐색 탭" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 25 25" width="20"><title>탐색 탭</title><polygon fill="none" points="13.941 13.953 7.581 16.420 10.06 10.056 16.42 7.585 13.941 13.953" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon><polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.420 10.06 10.056"></polygon><circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle></svg>
+                &nbsp;&nbsp;&nbsp;탐색 탭
+            </div>
+            <div>
+                <svg aria-label="릴스" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 25 25" width="20"><title>릴스</title><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049" x2="21.95" y1="7.002" y2="7.002"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line><path d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.620a.909.909 0 0 1 0 1.575l-4.545 2.620a.91.91 0 0 1-.91 0Z" fill-rule="evenodd"></path></svg>
+                &nbsp;&nbsp;&nbsp;릴스
+            </div>
+            <div>
+                <svg aria-label="Direct" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 25 25" width="20"><title>Direct</title><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                &nbsp;&nbsp;&nbsp;메세지
+            </div>
+            <div>
+                <svg aria-label="알림" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 25 25" width="20"><title>알림</title><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.203-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.206.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.820c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+                &nbsp;&nbsp;&nbsp;알림
+            </div>
+            <div>
+                <svg aria-label="새로운 게시물" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 25 25" width="20"><title>새로운 게시물</title><path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line></svg>
+                &nbsp;&nbsp;&nbsp;만들기
+            </div>
+            <div>
+                <img id="profile" src="./images/cat1.jpg">&nbsp;&nbsp;<span>dasom_95</span>
+            </div>
+            <div id="thread">
+                <svg aria-label="" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="28" role="img" viewBox="0 0 195 195" width="20"><title></title><path class="xcslo1z" d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3207 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8220 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 20.4209 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 20.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2204 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2204 120.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.620 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.202 100.233C120.264 120.935 108.662 128.946 98.4405 129.507Z"></path></svg>
+                &nbsp;&nbsp;&nbsp;Threads
+            </div>
+            <div>
+                <svg aria-label="설정" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 25 25" width="20"><title>설정</title><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="3" x2="21" y1="4" y2="4"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="3" x2="21" y1="12" y2="12"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="3" x2="21" y1="20" y2="20"></line></svg>
+                &nbsp;&nbsp;&nbsp;더 보기
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="newfeed">
+                <img  id="feed" src="./images/new_post.png">
+            </div>
+            
+            <br><br>
+
+            <div class="main">
+                <table id="post">
+                    <tr>
+                        <td id="img1_1"><img id="img1" src="./images/kia.jpg"></td>
+                        <td id="name" colspan="2">always_kia_tigers</td>
+                        <td id="more"><button id="point" type="button">···</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <img id="main_img" src="./images/main_img.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="icon"  colspan="4">
+                            <svg aria-label="좋아요" class="x1lliihq x1n2onr6 xyb1xck" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20"><title>좋아요</title><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>&nbsp;
+                            <svg aria-label="댓글 달기" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20"><title>댓글 달기</title><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>&nbsp;
+                            <svg aria-label="게시물 공유" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="20" role="img" viewBox="0 0 24 24" width="20"><title>게시물 공유</title><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="like" colspan="4">좋아요 2023개</td>
+                    </tr>
+                    <tr>
+                        <td id="main_text" colspan="4"> <span>always_kia_tigers</span>&nbsp;수고했어, 2023시즌도 🍀</td>
+                    </tr>
+                    <tr>
+                        <td id="reply_text" colspan="4">댓글 32개</td>
+                    </tr>
+                </table>
+                <input type="text" id="reply" placeholder="댓글 달기...">
+            </div>
+        </div>
+
+        <div class="right">
+            <table id="right">
+                <tr id="tr_1">
+                   <td><img id="profile" src="./images/cat1.jpg"></td> 
+                   <td id="a">&nbsp;dasom_95</td> 
+                   <td id="small">전환</td> 
+                </tr>
+                <tr id="tr_2">
+                    <td id="b" colspan="2">회원님을 위한 추천</td> 
+                    <td id="c">모두 보기</td> 
+                 </tr>
+                 <tr id="tr_3">
+                    <td><img id="profile" src="./images/cat2.jpg"></td> 
+                    <td id="a">&nbsp;black_cat<br><span id="rec">&nbsp;회원님을 위한 추천</span></td> 
+                    <td id="small">팔로우</td> 
+                 </tr>
+                 <tr id="tr_4">
+                    <td><img id="profile" src="./images/cat3.jpeg"></td> 
+                    <td id="a">&nbsp;white_cat_88<br><span id="rec">&nbsp;회원님을 위한 추천</span></td> 
+                    <td id="small">팔로우</td> 
+                 </tr>
+                 <tr id="tr_5">
+                    <td><img id="profile" src="./images/cat3.jpg"></td> 
+                    <td id="a">&nbsp;Yell0w_cat<br><span id="rec">&nbsp;회원님을 위한 추천</span></td> 
+                    <td id="small">팔로우</td> 
+                 </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
